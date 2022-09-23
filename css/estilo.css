@@ -28,6 +28,7 @@ header{
     z-index: 1000;
     background-size: cover;
     height: 100vh;
+    backdrop-filter: blur(3);
 }
 .back{
     background-color: var(--background-color);
@@ -37,7 +38,7 @@ header{
     top: 0;
     left: 0;
     z-index: 10;
-    backdrop-filter: blur(3);
+
 }
 
 nav{
@@ -109,9 +110,6 @@ nav button {
 nav .more{
     display: none;
 }
-nav .more{
-    display: none;
-}
 
 nav .menu-more{
     margin-top: 4.1rem;
@@ -121,16 +119,18 @@ nav .menu-more{
     flex-direction: column;
     background-color: var(--background-color);
     min-width: 120px;
-    padding-bottom: 55px;
+
 }
 
 nav .menu-more a{
     padding: 18px;
     color: var(--color);
     text-decoration: none;
+    transition: all .2s ease-out;
 }
 nav .menu-more a:hover{
     background-color: var(--color2);
+    transition: all .4s ease-out;
 }
 
 /*body*/
