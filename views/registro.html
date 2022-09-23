@@ -5,72 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceso Movil</title>
-    <link rel="stylesheet" href="/css/estilo.css"/>
+    <link rel="stylesheet" href="/css/estilo2.css"/>
     <!--CSS bootstrap-->
-    <script src="../bootstrap-5.2.1-dist/css/bootstrap.css"></script>
-    
+    <link rel="stylesheet" href="/bootstrap-5.2.1-dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/5ad47a4490.js" crossorigin="anonymous"></script>
     <script src="../bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="back">
-        <nav class="nav">
-            <ul class="nav-menu">
-                    <button class="nav-toggle" aria-label="Abrir menú">
-                    <i class="fa-solid fa-bars"></i>
-                    </button>
-                    <li><a href="../index.html" class="nav-logo"><img src="/img/ACCESO MOVIL-recortado.png" alt="acceso movil"></a></li>
-                    <div>
-                    <button class="nav-login"><i class="fa-solid fa-face-laugh-beam"></i></button>
-                    <button class="nav-shopping"><i class="fa-solid fa-cart-shopping"></i></button>
-                    </div>
-                    <li class="nav-menu-item"><a href="/views/fundas.html" class="nav-menu-link">Fundas</a></li>
-                    <li class="nav-menu-item"><a href="/views/auriculares.html" class="nav-menu-link">Auriculares</a></li>
-                    <li class="nav-menu-item"><a href="/views/popsockets.html" class="nav-menu-link">Popsockets</a></li>
-                    <li class="nav-menu-item"><a href="/views/comecable.html" class="nav-menu-link link-hide">Comecable</a></li>
-                    <li class="nav-menu-item"><a href="/views/templado.html" class="nav-menu-link link-hide">Templados</a></li>
-                    <li class="nav-menu-item"><a href="/views/arosdeluz.html" class="nav-menu-link link-hide">Aros de luz</a></li>
-                    <li class="more">
-                        <a href="" class="nav-menu-link" id="bmore">Mas</a>
-                        <div class="menu-more">
-                            <a href="/views/comecable.html">Comecable</a>
-                            <a href="/views/templado.html">Templados</a>
-                            <a href="/views/arosdeluz.html">Aros de luz</a>
-                        </div>
-                    </li>
-            </ul>
-            <ul class="search">
-                <li><a href="">Buscar</a></li>
-                <li><a href="">Carrito</a></li>
-                <li><a href="/views/registro.html">Login</a></li>
-            </ul>
-        </nav>
-    </div>
-    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">
+                <img src="/img/ACCESO MOVIL-recortado.png" width="180px" alt="">
+            </a>
 
-    </header>
-    <main >
-        <div class="container">
-            <form class="row g-lg-5">
-    
-            <div class="col-6">
-                <label for="emailInput" class="form-label">Email</label>
-                <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu email">
+            <button class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toogle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" ><a class="nav-link" aria-current="page" href="">Fundas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Auriculares</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Popsockets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Comecable</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Templados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Aros de luz</a></li>
+                </ul>
             </div>
-            <div class="col-6">
-                <label for="InputPass" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="inputPass" placeholder="Escribe tu contraseña">
-            </div>
-            <div class="col-6">
-                <label for="inputAdress" class="form-control">Dirección</label>
-                <input type="text" class="form-control" id="inputAdress" placeholder="Escribe tu dirección">
-            </div>
-            </form>
         </div>
-    </main>
+    </nav>
 
-    <footer></footer>
+    <div class="carousel slide" id="mainSlider" data-bs-ride="carousel">
+        <div class="carousel-inner m-4">
+            <div class="carousel-item active">
+                <img src="/img/arosdeluz.jpg" alt="" class="d-block w-100" >
+            </div>
+            <div class="carousel-item">
+                <img src="/img/auriculares.jpg" alt="" class="d-block w-100" width: 400px height:600px >
+            </div>
+            <div class="carousel-item">
+                <img src="/img/fundas-piel.jpg" alt="" class="d-block w-100">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
 
 </body>
 </html>
