@@ -15,7 +15,7 @@ body{
     font-size: 16px;
     padding: 0;
     margin: 0;
-    background-image: url(/img/behar-zenuni-797461-unsplash-scaled.jpg);
+    background-image: url(../img/behar-zenuni-797461-unsplash-scaled.jpg);
     background-size: cover;
     height: 100vh;
 }
@@ -135,6 +135,9 @@ nav .menu-more a:hover{
 
 /*body*/
 
+.container{
+    margin-top: 0 100px;
+}
 
 @media screen and (max-width:1194px){
     
