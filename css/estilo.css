@@ -133,6 +133,8 @@ nav .menu-more a:hover{
     transition: all .4s ease-out;
 }
 
+
+
 /*body*/
 
 .container{
@@ -156,18 +158,11 @@ nav .menu-more a:hover{
         padding: 0;
         margin: 0;
     }
-    nav ul{
-        display: none;
+    .nav-menu-link{
+    display: none;
     }
-    nav .mobile{
-            display: flex;
-            justify-content: space-between;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-    
-    nav .mobile .header{
-        width: 817px;
+    .nav-menu-link a{
+        display: none;
     }
 
 }
@@ -180,19 +175,15 @@ nav .menu-more a:hover{
         margin: 0;
     }
 
-    nav ul + li{
-        display: none;
-    }
-    
-    nav .mobile{
-        display: block;
-    }
-    nav .mobile .header{
-        width: 649px;
-    }
     body{
         height: 50vh;
+        background-repeat: none;
     }
+    /*.nav-menu{
+        flex-direction: column;
+        margin-right: 20px;
+        background-color: var(--background-color);
+    }*/
 
 }
 @media screen and (max-width:400px){
